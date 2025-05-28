@@ -457,7 +457,8 @@ button:hover{
 /* Medium screens (tablets, 768px and below) - 2 columns */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
   }
 }
 
@@ -508,6 +509,12 @@ button:hover{
 .agency img{
   width: 70%;
 }
+@media (max-width: 992px) {
+  .agency {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -673,6 +680,12 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+@media (max-width: 992px) {
+  .contact-col {
+    grid-template-columns: 1fr;
+  }
+}
+
 .column-12{
   margin-left: 10%;
 }
